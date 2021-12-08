@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{08B726F0-6A93-408B-B47B-427A207F3165}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>VisionInspect</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\김진우\Desktop\project\개인개발\VisionInspect\VisionInspect\usercontrol;C:\Users\김진우\Desktop\project\개인개발\VisionInspect\VisionInspect\control;C:\Users\김진우\Desktop\project\개인개발\VisionInspect\VisionInspect\common;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\김진우\Desktop\VisionInspect\VisionInspect\inspectfunction;C:\Users\김진우\Desktop\VisionInspect\VisionInspect\usercontrol;C:\Users\김진우\Desktop\VisionInspect\VisionInspect\control;C:\Users\김진우\Desktop\VisionInspect\VisionInspect\common;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\김진우\Desktop\project\개인개발\VisionInspect\VisionInspect\json\nlohmann;C:\Users\김진우\Desktop\VisionInspect\VisionInspect\inspectfunction;C:\Users\김진우\Desktop\VisionInspect\VisionInspect\usercontrol;C:\Users\김진우\Desktop\VisionInspect\VisionInspect\control;C:\Users\김진우\Desktop\VisionInspect\VisionInspect\common;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WIN64;WIN64;_WINDOWS;_DEBUG;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MinimalRebuild>false</MinimalRebuild>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <Optimization>MaxSpeed</Optimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Cdib.h" />
+    <ClInclude Include="CDlgModel.h" />
+    <ClInclude Include="CDlgParameterBinary.h" />
+    <ClInclude Include="CDlgParameterBlob.h" />
+    <ClInclude Include="CDlgParameterLinefit.h" />
+    <ClInclude Include="CDlgRoiConfig.h" />
+    <ClInclude Include="CDlgRoiControl.h" />
+    <ClInclude Include="CDlgVisionDisplay.h" />
+    <ClInclude Include="CInspectControl.h" />
+    <ClInclude Include="CInterfaceDlg.h" />
+    <ClInclude Include="CJsonControl.h" />
+    <ClInclude Include="CLogProc.h" />
+    <ClInclude Include="CMyImageBuffer.h" />
+    <ClInclude Include="CommonData.h" />
+    <ClInclude Include="common\CommonDefine.h" />
+    <ClInclude Include="common\CommonUtil.h" />
+    <ClInclude Include="common\configure.h" />
+    <ClInclude Include="common\Ini.h" />
+    <ClInclude Include="common\Lock.h" />
+    <ClInclude Include="control\AlphaBlend.h" />
+    <ClInclude Include="control\CalendarWnd.h" />
+    <ClInclude Include="control\HoverButton.h" />
+    <ClInclude Include="control\ListBoxST.h" />
+    <ClInclude Include="control\memdc.h" />
+    <ClInclude Include="control\StaticButton.h" />
+    <ClInclude Include="control\StaticPanel.h" />
+    <ClInclude Include="control\StaticResult.h" />
+    <ClInclude Include="control\StaticTextButton.h" />
+    <ClInclude Include="CParameterManager.h" />
+    <ClInclude Include="CRoiClass.h" />
+    <ClInclude Include="CRoiManager.h" />
+    <ClInclude Include="CVector.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="inspectfunction\CInspectFunc.h" />
+    <ClInclude Include="inspectfunction\Fchain.h" />
+    <ClInclude Include="json\json-forwards.h" />
+    <ClInclude Include="json\json.h" />
+    <ClInclude Include="KjwMatrix.h" />
+    <ClInclude Include="Lang.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SingleTone.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="usercontrol\CGifControl.h" />
+    <ClInclude Include="usercontrol\CIcon.h" />
+    <ClInclude Include="usercontrol\CIconButton.h" />
+    <ClInclude Include="usercontrol\CNEImage.h" />
+    <ClInclude Include="usercontrol\CRollMapInterface.h" />
+    <ClInclude Include="usercontrol\CUserItemFrame.h" />
+    <ClInclude Include="usercontrol\DefectDispStatic.h" />
+    <ClInclude Include="usercontrol\dib.h" />
+    <ClInclude Include="usercontrol\dibpal.h" />
+    <ClInclude Include="usercontrol\DispImageStatic.h" />
+    <ClInclude Include="usercontrol\StaticColorCtrl.h" />
+    <ClInclude Include="usercontrol\UserButton.h" />
+    <ClInclude Include="VisionInspect.h" />
+    <ClInclude Include="VisionInspectDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cdib.cpp" />
+    <ClCompile Include="CDlgModel.cpp" />
+    <ClCompile Include="CDlgParameterBinary.cpp" />
+    <ClCompile Include="CDlgParameterBlob.cpp" />
+    <ClCompile Include="CDlgParameterLinefit.cpp" />
+    <ClCompile Include="CDlgRoiConfig.cpp" />
+    <ClCompile Include="CDlgRoiControl.cpp" />
+    <ClCompile Include="CDlgVisionDisplay.cpp" />
+    <ClCompile Include="CInspectControl.cpp" />
+    <ClCompile Include="CJsonControl.cpp" />
+    <ClCompile Include="CLogProc.cpp" />
+    <ClCompile Include="CMyImageBuffer.cpp" />
+    <ClCompile Include="CommonData.cpp" />
+    <ClCompile Include="common\CommonUtil.cpp" />
+    <ClCompile Include="common\Ini.cpp" />
+    <ClCompile Include="common\Lock.cpp" />
+    <ClCompile Include="control\AlphaBlend.cpp" />
+    <ClCompile Include="control\CalendarWnd.cpp" />
+    <ClCompile Include="control\HoverButton.cpp" />
+    <ClCompile Include="control\ListBoxST.cpp" />
+    <ClCompile Include="control\StaticButton.cpp" />
+    <ClCompile Include="control\StaticPanel.cpp" />
+    <ClCompile Include="control\StaticResult.cpp" />
+    <ClCompile Include="control\StaticTextButton.cpp" />
+    <ClCompile Include="CParameterManager.cpp" />
+    <ClCompile Include="CRoiClass.cpp" />
+    <ClCompile Include="CRoiManager.cpp" />
+    <ClCompile Include="CVector.cpp" />
+    <ClCompile Include="inspectfunction\CInspectFunc.cpp" />
+    <ClCompile Include="inspectfunction\Fchain.cpp" />
+    <ClCompile Include="json\jsoncpp.cpp" />
+    <ClCompile Include="Lang.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="usercontrol\CGifControl.cpp" />
+    <ClCompile Include="usercontrol\CIcon.cpp" />
+    <ClCompile Include="usercontrol\CIconButton.cpp" />
+    <ClCompile Include="usercontrol\CNEImage.cpp" />
+    <ClCompile Include="usercontrol\CRollMapInterface.cpp" />
+    <ClCompile Include="usercontrol\CUserItemFrame.cpp" />
+    <ClCompile Include="usercontrol\DefectDispStatic.cpp" />
+    <ClCompile Include="usercontrol\dib.cpp" />
+    <ClCompile Include="usercontrol\dibpal.cpp" />
+    <ClCompile Include="usercontrol\DispImageStatic.cpp" />
+    <ClCompile Include="usercontrol\StaticColorCtrl.cpp" />
+    <ClCompile Include="usercontrol\UserButton.cpp" />
+    <ClCompile Include="VisionInspect.cpp" />
+    <ClCompile Include="VisionInspectDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionInspect.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VisionInspect.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\btn_next.bmp" />
+    <Image Include="res\btn_prev.bmp" />
+    <Image Include="res\view_128.bmp" />
+    <Image Include="res\VisionInspect.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
